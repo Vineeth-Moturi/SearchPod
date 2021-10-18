@@ -1,0 +1,27 @@
+<%@host = "http://127.0.0.1:3000"%>
+
+<div class=title><h1>SearchProd</h1></div>
+<div class=main_content>
+<p>SearchPod is a Cart like utility<br> Where user can have collection of items stored online and synced<br>Like having TODO list, Blog Articles, Products Cart<br>
+</p>
+</div>
+
+<div class=signup_login_btns_contain>
+    <a href=<%=@host+"/main/signup"%> target="_self"><button class=signup_login_btns type=button>Signup</button></a>
+    <a href=<%=@host+"/main/login"%> target="_self" style="color:rgb(244, 162, 97);"><button class=signup_login_btns type=button>Login</button></a>
+</div>
+
+<style>
+.title{text-align:center;}
+.signup_login_btns_contain{text-align:center;}
+.signup_login_btns{background-color:#4CAF50;  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer}
+.main_content{text-align:center;}
+</style>
