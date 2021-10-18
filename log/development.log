@@ -1,0 +1,662 @@
+Started GET "/" for 127.0.0.1 at 2021-10-18 12:22:00 +0530
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.7.2/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 438)
+Completed 200 OK in 56ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 3567)
+
+
+Started GET "/home/main" for 127.0.0.1 at 2021-10-18 12:37:47 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/main"):
+  
+Started GET "/home/main" for 127.0.0.1 at 2021-10-18 12:38:39 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/main"):
+  
+Started GET "/" for 127.0.0.1 at 2021-10-18 12:38:45 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/administrator/SearchPod/public/packs
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 2779ms
+Built at: 10/18/2021 12:38:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4303.8ms | Allocations: 15909)
+Completed 200 OK in 4310ms (Views: 4308.2ms | Allocations: 17069)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 12:38:51 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 2957)
+Completed 200 OK in 17ms (Views: 17.0ms | Allocations: 3341)
+
+
+Started GET "/home/signup" for 127.0.0.1 at 2021-10-18 12:39:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/signup"):
+  
+Started GET "/home/signup" for 127.0.0.1 at 2021-10-18 12:40:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/signup"):
+  
+Started GET "/home/signup" for 127.0.0.1 at 2021-10-18 12:40:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/signup"):
+  
+Started GET "/home/signup" for 127.0.0.1 at 2021-10-18 12:40:57 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/signup"):
+  
+Started GET "/home" for 127.0.0.1 at 2021-10-18 12:41:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home" for 127.0.0.1 at 2021-10-18 12:41:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home/signup" for 127.0.0.1 at 2021-10-18 12:41:54 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home/signup"):
+  
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 12:42:16 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 3039)
+Completed 200 OK in 34ms (Views: 32.9ms | Allocations: 3661)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 12:50:45 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 2937)
+Completed 200 OK in 28ms (Views: 27.3ms | Allocations: 3431)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 12:50:52 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 3029)
+Completed 200 OK in 33ms (Views: 32.1ms | Allocations: 3529)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 12:51:01 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 2955)
+Completed 200 OK in 38ms (Views: 37.9ms | Allocations: 3330)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:12:43 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 5191)
+Completed 200 OK in 45ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 7768)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:28:46 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5191)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 7768)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:38:32 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 3234)
+Completed 200 OK in 34ms (Views: 33.3ms | Allocations: 4329)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:38:38 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 2967)
+Completed 200 OK in 58ms (Views: 57.9ms | Allocations: 3351)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:40:34 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 2957)
+Completed 200 OK in 55ms (Views: 54.6ms | Allocations: 3336)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:41:15 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 44.4ms | Allocations: 6876)
+  Rendered layout layouts/application.html.erb (Duration: 46.3ms | Allocations: 6940)
+Completed 500 Internal Server Error in 58ms (Allocations: 8005)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<ActionView::Base:0x000000000087c8>):
+     7:   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     8:     <ul class="navbar-nav mr-auto">
+     9:       <li class="nav-item">
+    10:         <%= link_to "Bloggers", users_path, class: "nav-link" %>
+    11:       </li>
+    12:       <li class="nav-item dropdown">
+    13:         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+app/views/main/home.html.erb:10
+Started GET "/" for 127.0.0.1 at 2021-10-18 14:46:35 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 3344)
+Completed 200 OK in 36ms (Views: 34.7ms | Allocations: 4527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:01:35 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3258)
+Completed 200 OK in 22ms (Views: 21.0ms | Allocations: 4339)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:02:06 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2964)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 3339)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:03:10 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 3258)
+Completed 200 OK in 19ms (Views: 18.0ms | Allocations: 4345)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:05:57 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 3258)
+Completed 200 OK in 40ms (Views: 39.6ms | Allocations: 4339)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 15:06:00 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.8ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 3041)
+Completed 200 OK in 33ms (Views: 31.8ms | Allocations: 3490)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:06:24 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3255)
+Completed 200 OK in 15ms (Views: 14.1ms | Allocations: 4336)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:06:26 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 3.7ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 3033)
+Completed 200 OK in 41ms (Views: 39.8ms | Allocations: 3535)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:07:28 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3260)
+Completed 200 OK in 21ms (Views: 19.8ms | Allocations: 4346)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 15:07:31 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 3027)
+Completed 200 OK in 33ms (Views: 32.1ms | Allocations: 3528)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:08:46 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3258)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 4339)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 15:08:50 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.4ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 3025)
+Completed 200 OK in 20ms (Views: 19.7ms | Allocations: 3526)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:08:56 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.4ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3025)
+Completed 200 OK in 19ms (Views: 17.8ms | Allocations: 3526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:09:52 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3264)
+Completed 200 OK in 20ms (Views: 19.0ms | Allocations: 4350)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:09:54 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.3ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3025)
+Completed 200 OK in 26ms (Views: 25.7ms | Allocations: 3525)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 15:09:58 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3026)
+Completed 200 OK in 16ms (Views: 15.5ms | Allocations: 3526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:10:02 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 2964)
+Completed 200 OK in 21ms (Views: 20.8ms | Allocations: 3339)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:10:03 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 2955)
+Completed 200 OK in 31ms (Views: 30.6ms | Allocations: 3329)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:10:40 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3256)
+Completed 200 OK in 24ms (Views: 23.6ms | Allocations: 4337)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:10:42 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3026)
+Completed 200 OK in 23ms (Views: 21.9ms | Allocations: 3526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:12:46 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 3256)
+Completed 200 OK in 30ms (Views: 28.8ms | Allocations: 4337)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:12:47 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.3ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3025)
+Completed 200 OK in 15ms (Views: 14.5ms | Allocations: 3525)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:13:42 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3269)
+Completed 200 OK in 18ms (Views: 17.6ms | Allocations: 4357)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:13:43 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3026)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 3527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:13:45 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2964)
+Completed 200 OK in 16ms (Views: 15.5ms | Allocations: 3339)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 15:13:47 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3027)
+Completed 200 OK in 23ms (Views: 22.7ms | Allocations: 3527)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:13:48 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2964)
+Completed 200 OK in 16ms (Views: 15.6ms | Allocations: 3339)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:16:19 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3259)
+Completed 200 OK in 11ms (Views: 9.0ms | Allocations: 4346)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:16:27 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 17.0ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 3268)
+Completed 200 OK in 53ms (Views: 52.6ms | Allocations: 4355)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:18:38 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3257)
+Completed 200 OK in 19ms (Views: 17.6ms | Allocations: 4338)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:19:10 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 3257)
+Completed 200 OK in 34ms (Views: 32.7ms | Allocations: 4338)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:19:17 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.3ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3025)
+Completed 200 OK in 18ms (Views: 16.9ms | Allocations: 3526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:19:19 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2964)
+Completed 200 OK in 7ms (Views: 7.1ms | Allocations: 3339)
+
+
+Started GET "/main/login" for 127.0.0.1 at 2021-10-18 15:19:20 +0530
+Processing by MainController#login as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/login.html.erb within layouts/application
+  Rendered main/login.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 3026)
+Completed 200 OK in 29ms (Views: 28.7ms | Allocations: 3525)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:19:21 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2964)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 3339)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:22:47 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 3262)
+Completed 200 OK in 40ms (Views: 39.1ms | Allocations: 4343)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:23:14 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3268)
+Completed 200 OK in 25ms (Views: 24.5ms | Allocations: 4350)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:26:50 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3280)
+Completed 200 OK in 21ms (Views: 19.8ms | Allocations: 4368)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:27:07 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3264)
+Completed 200 OK in 18ms (Views: 17.1ms | Allocations: 4345)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:27:27 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3263)
+Completed 200 OK in 15ms (Views: 14.5ms | Allocations: 4344)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:28:11 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3263)
+Completed 200 OK in 18ms (Views: 16.7ms | Allocations: 4344)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:28:13 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3026)
+Completed 200 OK in 18ms (Views: 17.2ms | Allocations: 3528)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:28:15 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2970)
+Completed 200 OK in 18ms (Views: 17.1ms | Allocations: 3345)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:28:52 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3263)
+Completed 200 OK in 20ms (Views: 19.6ms | Allocations: 4349)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:29:30 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 3271)
+Completed 200 OK in 42ms (Views: 40.9ms | Allocations: 4352)
+
+
+Started GET "/main/signup" for 127.0.0.1 at 2021-10-18 15:29:34 +0530
+Processing by MainController#signup as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/signup.html.erb within layouts/application
+  Rendered main/signup.html.erb within layouts/application (Duration: 0.5ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3025)
+Completed 200 OK in 21ms (Views: 20.2ms | Allocations: 3526)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-18 15:29:36 +0530
+Processing by MainController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/home.html.erb within layouts/application
+  Rendered main/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 44)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2964)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 3339)
+
+
