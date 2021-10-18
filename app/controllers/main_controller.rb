@@ -1,20 +1,24 @@
 class MainController < ApplicationController
   def home
+
   end
 
   def signup
   end
 
-  def new
+  def signup_new
     if params != nil
       (@users = User.new(username:params[:username],password:params[:password],email:params[:email])) if(params[:product_link]!=nil)
     end
     if @users.save
       @user = User.find_by(params[:username])
-      render :new #have to render Dashboard
+      @authentication_status = "SignUp Successfully Completed"
+      render :authentication_status #have to render Dashboard
       #here we calling main.html.erb from new(i.e after storing data)
       #so initialised new @products object and called to pass instance
     else
+      @authentication_status = "SignUp Failed"
+      render :authentication_status
     end
   end
 
@@ -25,7 +29,7 @@ class MainController < ApplicationController
     @login_status = false
     if params != nil
       if((params[:username]!=nil) && (params[:password]!=nil) && (params[:email]!=nil))
-        @users = User.where(username:params[:username],email:params[:email]))
+        @users = User.where(username:params[:username],email:params[:email])
         @users.each do |t|
           if ((t.username==params[:username]) && (t.password==params[:password]) && (t.email==params[:email]))
             @login_status = true
@@ -34,9 +38,11 @@ class MainController < ApplicationController
       end
     end
     if @login_status ==true
-      render :"Login Successful"
+      @authentication_status = "Login Successful"
+      render :authentication_status
     else
-      render :"Login Failed..Try again"
+      @authentication_status = "Login Failed"
+      render :authentication_status
+    end
   end
-
 end
