@@ -1,18 +1,59 @@
-<h1 style="text-align:center;">Login</h1>
-<div style="text-align:center;">
-<%= form_with model: @user do |f|%>
-    <p>
-    <%=f.label :username, "UserName:"%>
-    <%=f.text_field :username%>
-    <br>
-    <%=f.label :password, "Password:"%>
-    <%=f.text_field :password%>
-    <br>
-    <%=f.label :email, "Email:"%>
-    <%=f.text_field :email%>
-    <br>
-    <%=f.submit%>
-
-<%end%>
+<body class=body>
+<div class=login_container_head>
+    <h1>Login</h1>
 </div>
 
+<div class=login_container_body style="text-align:center;">
+<%= form_with model: @user do |f|%>
+    <p>
+    <span class=label_font> <%=f.label :email, "Email:"%> </span>
+    <span style="padding-left:48px;"><%=f.text_field :email%></span>
+    <br><br>
+    <span class=label_font> <%=f.label :password, "Password:"%> </span>
+    <span style="padding-left:11px;"><%=f.text_field :password%></span>
+    <br><br>
+    <span><%=f.submit "Login", class: "login_btn"%></span>
+    </p>
+<%end%>
+<p style="color:rgb(107, 112, 92);">*password should be the one, used in signup!</p>
+</div>
+
+<div style="background-color:rgb(242, 204, 143); padding-bottom:24%">
+</div>
+
+</body>
+
+<style>
+.login_container_head{
+    background-color:rgb(107, 112, 92);
+    padding:28px 32px;
+    text-align: center;
+    color: white;}
+.login_container_body{
+    background-color:rgb(242, 204, 143);
+    padding:50px 10px;
+}
+.label_font{font-size:20px;}
+.login_btn{
+    padding:5px 25px;
+    border:none;
+    border-radius:5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;}
+.login_btn:hover{
+    border-radius:5px;
+    background-color: #4CAF50;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;}
+
+.body{background-color:rgb(33, 37, 41);}
+</style>

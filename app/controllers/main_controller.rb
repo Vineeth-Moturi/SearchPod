@@ -8,18 +8,20 @@ class MainController < ApplicationController
 
   def signup_new
     if params != nil
-      (@users = User.new(username:params[:username],password:params[:password],email:params[:email])) if(params[:product_link]!=nil)
-    end
-    if @users.save
-      @user = User.find_by(params[:username])
-      @authentication_status = "SignUp Successfully Completed"
-      render :authentication_status #have to render Dashboard
+      (@users = User.new(username:params[:username],password:params[:password],email:params[:email])) if(params[:password]!=nil)
+      if @users.save
+        #@user = User.find_by(params[:username])
+        @authentication_status = params[:username]+" SignUp Successfully Completed"
+        render :authentication_status
+      else
+        @authentication_status = "SignUp Failed"
+        render :authentication_status
+      end
+      #have to render Dashboard
       #here we calling main.html.erb from new(i.e after storing data)
       #so initialised new @products object and called to pass instance
-    else
-      @authentication_status = "SignUp Failed"
-      render :authentication_status
     end
+    #flash has to be written here
   end
 
   def login
@@ -28,10 +30,10 @@ class MainController < ApplicationController
   def login_validate
     @login_status = false
     if params != nil
-      if((params[:username]!=nil) && (params[:password]!=nil) && (params[:email]!=nil))
-        @users = User.where(username:params[:username],email:params[:email])
+      if((params[:password]!=nil) && (params[:email]!=nil))
+        @users = User.where(email:params[:email],password:params[:password])
         @users.each do |t|
-          if ((t.username==params[:username]) && (t.password==params[:password]) && (t.email==params[:email]))
+          if ((t.password==params[:password]) && (t.email==params[:email]))
             @login_status = true
           end
         end
