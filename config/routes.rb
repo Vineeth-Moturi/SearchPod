@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'dashboard/Account'
+  get 'dashboard/ToDos'
+  get 'dashboard/Articles'
+  get 'dashboard/Products'
+
+  get 'dashboard/home'
   root 'main#home'
   get 'main/home'
   get 'main/signup'

@@ -12,7 +12,7 @@ class MainController < ApplicationController
       if @users.save
         #@user = User.find_by(params[:username])
         @authentication_status = params[:username]+" SignUp Successfully Completed"
-        render :authentication_status
+        redirect_to controller: 'dashboard', action: 'home'
       else
         @authentication_status = "SignUp Failed"
         render :authentication_status
@@ -41,7 +41,7 @@ class MainController < ApplicationController
     end
     if @login_status ==true
       @authentication_status = "Login Successful"
-      render :authentication_status
+      redirect_to controller: 'dashboard', action: 'home'
     else
       @authentication_status = "Login Failed"
       render :authentication_status
