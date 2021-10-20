@@ -1,1 +1,58 @@
-<h1>Dashboard/Home</h1>
+<%@host = "http://127.0.0.1:3000"%>
+<body>
+
+    <div class=nav_container>
+        <h1 style="padding:15px;">Dashboard</h1>
+    </div>
+    <div >
+        <h4 style="float:left;">Good Morning.. <%=@user_record%></h4>
+        <a href=<%=@host+"/main/login"%> style="float:right;"> <button class=dashboard_nav_btns>Logout</button></a>
+        <a href=<%=@host+"/dashboard/Account"%> style="float:right;padding-right:5px;"> <button class=dashboard_nav_btns>Account</button></a>
+    </div>
+    <br><br>
+    <div class=dashboard_content_body style="text-align:center;">
+        <a href=<%=@host+"/dashboard/ToDos"%> ><button class=dashboard_content_btns>ToDo List</button></a>
+        <a href=<%=@host+"/dashboard/Articles"%> ><button class=dashboard_content_btns>Articles</button></a>
+        <a href=<%=@host+"/dashboard/Products"%> ><button class=dashboard_content_btns>Products</button></a>
+    </div>
+    <br>
+    <div class=todo_output_container>
+    
+
+    <div>
+
+</body>
+
+<style>
+.nav_container{
+    background-color:rgb(233, 236, 239);
+}
+.dashboard_nav_btns{
+    background-color:#4CAF50;
+    color: white;
+    border:none;
+    border-radius:2px;
+    padding: 4px 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.dashboard_content_body{
+    background-color:rgb(233, 236, 239);
+    margin:50px 295px;
+}
+.dashboard_content_btns{
+    background-color:rgb(242, 204, 143);
+    color:rgb(107, 112, 92);
+    border-radius:5px;
+    border:none;
+    padding: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;   
+}
+</style>

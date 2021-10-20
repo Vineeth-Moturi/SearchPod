@@ -1,5 +1,6 @@
 class DashboardController < ApplicationController
   def home
+    @user_record = params[:user_record]
   end
 
   def Account
