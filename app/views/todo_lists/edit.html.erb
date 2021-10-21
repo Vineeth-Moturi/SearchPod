@@ -1,0 +1,9 @@
+<h1 style="background-color:#ECCE83;text-align:center;">Editing Todo List</h1>
+<body style="background-color:rgb(107, 112, 92);text-align:center;">
+<%= render 'form', todo_list: @todo_list %>
+
+<%= link_to 'Back', todo_lists_path ,{style:'float:left; padding-right:15px; font-size:20px; color:rgb(38, 70, 83);'}%>
+<%= link_to 'Show', @todo_list ,{style:'float:left; font-size:20px; color:rgb(38, 70, 83);'}%> |
+
+
+</body>

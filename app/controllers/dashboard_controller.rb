@@ -23,6 +23,7 @@ class DashboardController < ApplicationController
   end 
 
   def ToDos
+    @todo_content = TodoList.all
   end
 
   def Articles

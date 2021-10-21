@@ -1,0 +1,24 @@
+<body class=main_body>
+
+    <div class=main_head>
+     <h1>New Todo List</h1>
+    </div>
+<div class=main_body>
+    <%= link_to 'Back', todo_lists_path ,{style:'float:left; font-size:20px; color:rgb(38, 70, 83);'}%>
+    <%= render 'form', todo_list: @todo_list %>
+
+</div>
+
+</body>
+
+
+<style>
+.main_head{
+    background-color:#ECCE83;
+    text-align:center;    
+}
+.main_body{
+    background-color:rgb(107, 112, 92);
+    text-align:center; 
+}
+</style>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :todo_lists
   get 'dashboard/Account'
   get 'dashboard/ToDos'
   get 'dashboard/Articles'

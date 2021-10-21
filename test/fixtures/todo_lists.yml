@@ -2,10 +2,14 @@
 
 one:
   date: MyString
-  item: MyString
+  item: MyText
   status: false
+  userid: 1
+  user: one
 
 two:
   date: MyString
-  item: MyString
+  item: MyText
   status: false
+  userid: 1
+  user: two
