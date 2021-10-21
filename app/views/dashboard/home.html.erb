@@ -2,10 +2,11 @@
 <body>
 
     <div class=nav_container>
-        <h1 style="padding:15px;">Dashboard</h1>
+        <span style="padding:15px;font-size:3em;">Dashboard</span>
+        <span style="float:right;padding-top:45px;"><%=@useremail%></span>
     </div>
     <div >
-        <h4 style="float:left;">Good Morning.. <%=@user_record%></h4>
+        <h4 style="float:left; padding-left:15px;">Good <%=@time_session%> <%=@username%></h4>
         <a href=<%=@host+"/main/login"%> style="float:right;"> <button class=dashboard_nav_btns>Logout</button></a>
         <a href=<%=@host+"/dashboard/Account"%> style="float:right;padding-right:5px;"> <button class=dashboard_nav_btns>Account</button></a>
     </div>
@@ -17,7 +18,6 @@
     </div>
     <br>
     <div class=todo_output_container>
-    
 
     <div>
 

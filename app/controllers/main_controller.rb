@@ -9,10 +9,12 @@ class MainController < ApplicationController
     if params != nil
       (@users = User.new(username:params[:username],password:params[:password],email:params[:email])) if(params[:password]!=nil)
       if @users.save
-        @user_record = User.where(username:params[:username],password:params[:password],email:params[:email])
-        #@authentication_status = params[:username]+" SignUp Successfully Completed"
-        @user_id = @user_record[:id]
-        redirect_to controller: 'dashboard', action: 'home' ,id:@user_id
+        @signup_user_records = User.where(username:params[:username],password:params[:password],email:params[:email])
+        @authentication_status = params[:username]+" SignUp Successfully Completed"
+        @signup_user_records.each do |t|
+          @signup_user_record = t
+        end
+        redirect_to controller: 'dashboard', action: 'home' ,id:@signup_user_record[:id] , email:@signup_user_record[:email]
       else
         @authentication_status = "SignUp Failed"
         render :authentication_status
@@ -43,7 +45,7 @@ class MainController < ApplicationController
     end
     if @login_status ==true
       @authentication_status = "Login Successful"
-      redirect_to controller: 'dashboard', action: 'home', id:@login_user_record.username , user_record:@login_user_record.username
+      redirect_to controller: 'dashboard', action: 'home', id:@login_user_record.id , email:@login_user_record.email
     else
       @authentication_status = "Login Failed"
       render :authentication_status
