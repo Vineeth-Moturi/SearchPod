@@ -1,8 +1,12 @@
 class DashboardController < ApplicationController
+
+  @@user_record_transfer
+  
   def home
     @user_record = User.find_by(id:params[:id],email:params[:email])
     @username = @user_record[:username].to_str
     @useremail = @user_record[:email].to_str
+    @current_user_id = @user_record[:id]
 
     x=DateTime.now
     x = (x.hour)
@@ -16,14 +20,16 @@ class DashboardController < ApplicationController
       @time_session ="Night.."
     end
 
-    #@todolist = todo.all
+    @todolist = TodoList.where(user:params[:id])
+    @@user_record_transfer = params[:id]
   end
 
   def Account
   end 
 
   def ToDos
-    @todo_content = TodoList.all
+    #@@record_transfer = params[:id]
+    redirect_to controller:"todo_lists", action:'index', id:@@user_record_transfer
   end
 
   def Articles

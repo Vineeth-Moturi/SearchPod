@@ -1,9 +1,17 @@
 class TodoListsController < ApplicationController
   before_action :set_todo_list, only: %i[ show edit update destroy ]
 
+  @@user_record_transfer
+  
   # GET /todo_lists or /todo_lists.json
   def index
-    @todo_lists = TodoList.all
+    if(params[:id])
+      @todo_lists = TodoList.where(user:params[:id])
+      @@user_record_transfer = params[:id]
+    elsif @@user_record_transfer
+      @todo_lists = TodoList.where(user:@@user_record_transfer)
+    end
+    #this id in params comes from dashboard controller
   end
 
   # GET /todo_lists/1 or /todo_lists/1.json

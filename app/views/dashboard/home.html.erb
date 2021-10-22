@@ -4,6 +4,7 @@
     <div class=nav_container>
         <span style="padding:15px;font-size:3em;">Dashboard</span>
         <span style="float:right;padding-top:45px;"><%=@useremail%></span>
+        <span style="float:right;padding-top:25px;">UserID:<%=@current_user_id%></span>
     </div>
     <div >
         <h4 style="float:left; padding-left:15px;">Good <%=@time_session%> <%=@username%></h4>
@@ -12,12 +13,43 @@
     </div>
     <br><br>
     <div class=dashboard_content_body style="text-align:center;">
-        <a href=<%=@host+"/todo_lists"%> ><button class=dashboard_content_btns>ToDo List</button></a>
-        <a href=<%=@host+"/dashboard/Articles"%> ><button class=dashboard_content_btns>Articles</button></a>
+        <!--a href=<%=@host+"/todo_lists"%> ><button class=dashboard_content_btns>ToDo List</button></a-->
+        <a href=<%=@host+"/dashboard/ToDos"%> ><button class=dashboard_content_btns>ToDo List</button></a>
+        <a href=<%=@host+"/articles"%> ><button class=dashboard_content_btns>Articles</button></a>
         <a href=<%=@host+"/dashboard/Products"%> ><button class=dashboard_content_btns>Products</button></a>
     </div>
     <br>
+
     <div class=todo_output_container>
+    <table class=todo_main_body>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Item</th>
+        <th>Status</th>
+        <!--th>Userid</th-->
+        <!--Above one is Abonded-->
+        <!--th>User</th-->
+        <th colspan="2"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @todolist.each do |todo_list| %>
+        <tr>
+            <td><%= todo_list.date %></td>
+            <td><%= todo_list.item %></td>
+            <td><%= (todo_list.status ? 'Done' : 'Pending') %></td>
+            <!--td><% todo_list.userid %></td-->
+            <!--Above one is Abonded-->
+            <!--td><%= todo_list.user_id %></td-->
+            <td><%= link_to 'Show', todo_list ,{style:'color:#FFFFFF;'} %></td>
+            <!--td><%= link_to 'Edit', edit_todo_list_path(todo_list) ,{style:'color:rgb(42, 157, 143);'} %></td-->
+            <td><%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
 
     <div>
 
@@ -55,4 +87,16 @@
     margin: 4px 2px;
     cursor: pointer;   
 }
+.todo_main_body{
+  background-color:rgb(127, 85, 57);
+  color:white;
+  border-radius:5px;
+  text-align:center;
+  font-weight:550;
+  width:100%;
+  table-layout:fixed;
+  word-wrap:break-word;
+  margin:10px 10px;
+}
+th,td{padding:10px;}
 </style>

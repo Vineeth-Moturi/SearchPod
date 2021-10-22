@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  resources :articles
   resources :todo_lists
+
+  resources :users, shallow:true do
+    resources :todo_lists
+  end
   get 'dashboard/Account'
   get 'dashboard/ToDos'
   get 'dashboard/Articles'

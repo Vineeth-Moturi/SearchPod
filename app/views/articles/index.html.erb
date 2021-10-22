@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class=article_main_head>Articles</h1>
+<div class=container_new>
+<button class=create_new_button><%= link_to 'New Article', new_article_path ,{style:'color:#FFFFFF;font-weight:550;'}%></button>
+</div>
+
+<table class=article_main_body>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.body %></td>
+        <td><%= article.user_id %></td>
+        <td><%= link_to 'Show', article ,{style:'color:#FFFFFF;'}%></td>
+        <td><%= link_to 'Edit', edit_article_path(article) ,{style:'color:rgb(42, 157, 143);'}%></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<style>
+.article_main_head{
+  background-color:rgb(244, 162, 97);
+  color:white;
+  border-radius:5px;
+  margin: 8px 150px;
+  text-align:center;
+  font-weight:550;
+}
+.article_main_body{
+  background-color:rgb(127, 85, 57);
+  color:white;
+  border-radius:5px;
+  text-align:center;
+  font-weight:550;
+  width:100%;
+  table-layout:fixed;
+  word-wrap:break-word;
+  margin:10px 10px;
+}
+.create_new_button{
+  background-color:rgb(42, 157, 143);
+  color:white;
+  border:none;
+  border-radius:5px;
+  padding:8px
+}
+.container_new{text-align:center;}
+.button {
+    position: absolute;
+    top: 50%;
+}
+th,td{padding:10px;}
+</style>
+

@@ -1,40 +1,36 @@
 <body class=main_head>
 
 <p id="notice"><%= notice %></p>
+<div style="text-align:center;position:absolute; left:25%;">
+<table class=main_body>
+<tr>
+  <th><strong>Date:</strong></th>
+  <td><%= @todo_list.date %></td>
+</tr>
 
-<p class=main_body>
-  <strong>Date:</strong>
-  <%= @todo_list.date %>
-</p>
+<tr>
+  <th><strong>Item:</strong></th>
+  <td><%= @todo_list.item %></td>
+</tr>
 
-<p class=main_body>
-  <strong>Item:</strong>
-  <%= @todo_list.item %>
-</p>
+<tr>
+  <th><strong>Status:</strong></th>
+  <td><%= (@todo_list.status ? 'Done' : 'Pending') %></td>
+</tr>
 
-<p class=main_body>
-  <strong>Status:</strong>
-  <%= @todo_list.status %>
-</p>
-
-<p class=main_body>
-  <strong>Userid:</strong>
-  <%= @todo_list.userid %>
-</p>
-
-<p class=main_body>
-  <strong>User:</strong>
-  <%= @todo_list.user_id %>
-</p>
-
+<tr>
+  <th><strong>UserID:</strong></th>
+  <td><%= @todo_list.user_id %></td>
+</tr>
+</div>
 <p style="text-align:center;">
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
-<%= link_to 'Back', todo_lists_path %>
+<%= link_to 'Back', todo_lists_path%>
 </p>
 
 </body>
 
 <style>
 .main_head{background-color:rgb(107, 112, 92);}
-.main_body{color:#FFFFFF;text-align:center;}
+.main_body{color:#FFFFFF;text-align:left;font-size:25px;}
 </style>
