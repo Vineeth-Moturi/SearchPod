@@ -20,6 +20,7 @@ class TodoListsController < ApplicationController
 
   # GET /todo_lists/new
   def new
+    @@user_record_transfer
     @todo_list = TodoList.new
   end
 

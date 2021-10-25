@@ -5,22 +5,22 @@
 <table class=main_body>
 <tr>
   <th><strong>Date:</strong></th>
-  <td><%= @todo_list.date %></td>
+  <td class=data_properties><%= @todo_list.date %></td>
 </tr>
 
 <tr>
   <th><strong>Item:</strong></th>
-  <td><%= @todo_list.item %></td>
+  <td class=data_properties1><%= @todo_list.item %></td>
 </tr>
 
 <tr>
   <th><strong>Status:</strong></th>
-  <td><%= (@todo_list.status ? 'Done' : 'Pending') %></td>
+  <td class=data_properties><%= (@todo_list.status ? 'Done' : 'Pending') %></td>
 </tr>
 
 <tr>
   <th><strong>UserID:</strong></th>
-  <td><%= @todo_list.user_id %></td>
+  <td class=data_properties><%= @todo_list.user_id %></td>
 </tr>
 </div>
 <p style="text-align:center;">
@@ -33,4 +33,6 @@
 <style>
 .main_head{background-color:rgb(107, 112, 92);}
 .main_body{color:#FFFFFF;text-align:left;font-size:25px;}
+.data_properties{color:rgb(233, 196, 106);}
+.data_properties1{color:rgb(0, 95, 115);}
 </style>

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    has_many :todo_lists#, class_name: "todo_list", foreign_key: "reference_id"
+    has_many :todo_lists ,:dependent => :destroy #, class_name: "todo_list", foreign_key: "reference_id"
 
     validates :username, presence:true, uniqueness:true
     validates :email, presence:true, uniqueness:true

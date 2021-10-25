@@ -4,6 +4,7 @@
      <h1>New Todo List</h1>
     </div>
 <div class=main_body>
+    <h6 style="float:right;">UserID:(Available on Dashboard)</h6>
     <%= link_to 'Back', todo_lists_path ,{style:'float:left; font-size:20px; color:rgb(38, 70, 83);'}%>
     <%= render 'form', todo_list: @todo_list %>
 

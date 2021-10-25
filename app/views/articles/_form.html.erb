@@ -10,16 +10,16 @@
       </ul>
     </div>
   <% end %>
+  <table class="field">
+  <tr>
+    <th><%= form.label :title %></th>
+    <td><%= form.text_field :title %></td>
+  </tr>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
+  <tr>
+    <th><%= form.label :body %></th>
+    <td><%= form.text_area :body %></td>
+  </tr>
 
   <div class="field">
     <%= form.label :user_id %>

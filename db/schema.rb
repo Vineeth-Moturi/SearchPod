@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_10_21_121938) do
   end
 
   create_table "todo_lists", force: :cascade do |t|
-    t.string "date"
+    t.date "date"
     t.text "item"
     t.boolean "status"
     t.integer "userid"

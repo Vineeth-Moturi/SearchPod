@@ -10,7 +10,8 @@ class MainController < ApplicationController
       (@users = User.new(username:params[:username],password:params[:password],email:params[:email])) if(params[:password]!=nil)
       if @users.save
         @signup_user_records = User.where(username:params[:username],password:params[:password],email:params[:email])
-        @authentication_status = params[:username]+" SignUp Successfully Completed"
+        UsercommunicationMailer.with(username: @users[:username],email:@users[:email]).welcome_email.deliver_now
+        #@authentication_status = params[:username]+" SignUp Successfully Completed"
         @signup_user_records.each do |t|
           @signup_user_record = t
         end

@@ -1,3 +1,4 @@
+<br><br>
 <%= form_with(model: todo_list) do |form| %>
   <% if todo_list.errors.any? %>
     <div id="error_explanation">
@@ -15,7 +16,7 @@
   <div>
     <tr>
       <th><%= form.label :date ,class:"lable"%></th>
-      <td><%= form.text_field :date ,class:"field"%></td>
+      <td><%= form.date_field :date ,class:"field"%></td>
     </tr>
   </div>
 
@@ -29,21 +30,14 @@
   <div>
     <tr>
       <th><%= form.label :status ,class:"lable"%></th>
-      <td><%= form.check_box :status ,class:"field"%>*Status means Completed or Not</td>
-    </tr>
-  </div>
-
-  <div>
-    <tr>
-      <th><%= form.label :userid ,class:"lable"%></th>
-      <th><%= form.number_field :userid ,class:"field"%></td>
+      <td><%= form.check_box :status ,class:"field"%><span style='font-size:11px;'>*Status means Completed or Not</span></td>
     </tr>
   </div>
 
   <div>
     <tr>
       <th><%= form.label :user_id ,class:"lable"%></th>
-      <td><%= form.text_field :user_id ,placeholder: :user_id ,class:"field"%></td>
+      <td><%= form.text_field :user_id ,placeholder: :user_id ,class:"field"%><br> <span style='font-size:11px;'>*UserID</span></td>
     </tr>
   </div>
 
@@ -67,5 +61,7 @@ table{
   left:32%;
 }
 .lable{color:#FFFFFF;text-align:right;}
+.field{border-radius:7px;}
 th,td{padding:10px;}
+
 </style>
