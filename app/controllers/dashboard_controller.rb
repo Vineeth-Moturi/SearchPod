@@ -3,7 +3,12 @@ class DashboardController < ApplicationController
   @@user_record_transfer
   
   def home
-    @user_record = User.find_by(id:params[:id],email:params[:email])
+    if(params.key?("email"))
+      @user_record = User.find_by(id:params[:id],email:params[:email])
+    else
+      @user_record = User.find_by(id:params[:id])
+      #this is done for navigating from todo to dashboard
+    end
     @username = @user_record[:username].to_str
     @useremail = @user_record[:email].to_str
     @current_user_id = @user_record[:id]
@@ -22,6 +27,7 @@ class DashboardController < ApplicationController
 
     @todolist = TodoList.where(user:params[:id])
     @@user_record_transfer = params[:id]
+    #above code done for navigating back
   end
 
   def Account
@@ -38,4 +44,9 @@ class DashboardController < ApplicationController
   def Products
   end
 
+  def logout
+    cookies.delete(:email)
+    #current_user_id
+    redirect_to controller:"main", action: "login"
+  end
 end

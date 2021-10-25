@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'dashboard/ToDos'
   get 'dashboard/Articles'
   get 'dashboard/Products'
+  get '/dashboard/logout', to:"dashboard#logout"
 
   get 'dashboard/home'
   root 'main#home'
