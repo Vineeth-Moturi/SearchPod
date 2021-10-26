@@ -1,5 +1,24 @@
-<h1>New Article</h1>
+<body class=main_body>
 
-<%= render 'form', article: @article %>
+    <div class=main_head>
+     <h1>New Article</h1>
+    </div>
+<div class=main_body>
+    <h6 style="float:right;">UserID:(Available on Dashboard)</h6>
+    <%= render 'form', article: @article %>
+    <%= link_to 'Back', articles_path ,class:"nav_back"%>
+</div>
 
-<%= link_to 'Back', articles_path %>
+</body>
+
+<style>
+.main_head{
+    background-color:#ECCE83;
+    text-align:center;    
+}
+.main_body{
+    background-color:rgb(107, 112, 92);
+    text-align:center; 
+}
+.nav_back{float:left;font-size:21px;padding-left:5px;}
+</style>

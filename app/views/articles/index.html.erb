@@ -1,16 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class=article_main_head>Articles</h1>
+<h3 class=article_main_head>Articles</h3>
+<button class=nav_home_button><%= link_to 'Dashboard', dashboard_home_path(id:params[:id]) ,{style:'color:#FFFFFF; font-weight:550;'}%></button>
 <div class=container_new>
 <button class=create_new_button><%= link_to 'New Article', new_article_path ,{style:'color:#FFFFFF;font-weight:550;'}%></button>
 </div>
+<br><br>
 
 <table class=article_main_body>
   <thead>
     <tr>
+      <th>User</th>
       <th>Title</th>
       <th>Body</th>
-      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +20,9 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
+      <td><%= article.user_id %></td>
         <td><%= article.title %></td>
         <td><%= article.body %></td>
-        <td><%= article.user_id %></td>
         <td><%= link_to 'Show', article ,{style:'color:#FFFFFF;'}%></td>
         <td><%= link_to 'Edit', edit_article_path(article) ,{style:'color:rgb(42, 157, 143);'}%></td>
         <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -58,11 +60,19 @@
   border-radius:5px;
   padding:8px
 }
-.container_new{text-align:center;}
-.button {
-    position: absolute;
-    top: 50%;
+.container_new{
+  text-align:center;
+  position: absolute;
+  left:45%;
 }
 th,td{padding:10px;}
+
+.nav_home_button{
+  background-color:rgb(42, 157, 143);
+  color:white;
+  border:none;
+  border-radius:5px;
+  float:left;
+
 </style>
 

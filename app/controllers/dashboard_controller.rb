@@ -45,7 +45,8 @@ class DashboardController < ApplicationController
   end
 
   def logout
-    cookies.delete(:email)
+    session[:user_id] = nil
+    #cookies.delete(:email,domain:"all")
     #current_user_id
     redirect_to controller:"main", action: "login"
   end

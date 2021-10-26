@@ -1,3 +1,4 @@
+<br>
 <%= form_with(model: article) do |form| %>
   <% if article.errors.any? %>
     <div id="error_explanation">
@@ -10,23 +11,41 @@
       </ul>
     </div>
   <% end %>
-  <table class="field">
-  <tr>
-    <th><%= form.label :title %></th>
-    <td><%= form.text_field :title %></td>
-  </tr>
+  <div class="form_container">
+    <table>
+      <tr>
+        <th><%= form.label :title ,class:"lable"%></th>
+        <td><%= form.text_field :title ,class:"field"%></td>
+      </tr>
 
-  <tr>
-    <th><%= form.label :body %></th>
-    <td><%= form.text_area :body %></td>
-  </tr>
+      <tr>
+        <th><%= form.label :body ,class:"lable"%></th>
+        <td><%= form.text_area :body ,class:"field"%></td>
+      </tr>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+      <tr>
+        <th><%= form.label :user_id ,class:"lable"%></th>
+        <td><%= form.text_field :user_id ,class:"field"%></td>
+      </tr>
+    </table>
+      <div class="actions">
+        <%= form.submit %>
+      </div>
   </div>
 <% end %>
+
+<style>
+.body{background-color:rgb(107, 112, 92);}
+table{
+  table-layout:center;
+  text-align:left;
+}
+.form_container{
+  position:absolute;
+  left:32%;
+}
+.lable{color:#FFFFFF;text-align:right;}
+.field{border-radius:7px;}
+th,td{padding:10px;}
+
+</style>

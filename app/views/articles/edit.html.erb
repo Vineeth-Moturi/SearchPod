@@ -1,6 +1,9 @@
-<h1>Editing Article</h1>
+<h1 style="background-color:#ECCE83;text-align:center;">Editing Article</h1>
+<body style="background-color:rgb(107, 112, 92);text-align:center;">
 
 <%= render 'form', article: @article %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Show', @article ,{style:'float:left; padding-right:15px; font-size:20px; color:rgb(38, 70, 83);'}%> |
+<%= link_to 'Back', articles_path ,{style:'float:left; font-size:20px; color:rgb(38, 70, 83);'}%>
+
+</body>

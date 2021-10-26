@@ -1,19 +1,36 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @article.body %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @article.user_id %>
-</p>
+<body class=main_head>
+  <p id="notice"><%= notice %></p>
+  <div style="text-align:center;position:absolute; left:25%;">
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+
+
+  <table class=main_body>
+    <tr>
+      <th><strong>User:</strong></th>
+      <td class=data_properties><%= @article.user_id %></td>
+    </tr>
+
+    <tr>
+      <th><strong>Title:</strong></th>
+      <td class=data_properties><%= @article.title %></td>
+    </tr>
+
+    <tr>
+      <th><strong>Body:</strong></th>
+      <td class=data_properties><%= @article.body %></td>
+    </tr>
+
+
+  </table>
+
+</body>
+
+
+<style>
+.main_head{background-color:rgb(107, 112, 92);}
+.main_body{color:#FFFFFF;text-align:left;font-size:25px;}
+.data_properties{color:rgb(233, 196, 106);}
+.data_properties1{color:rgb(0, 95, 115);}
+</style>
